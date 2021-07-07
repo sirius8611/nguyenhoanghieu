@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url(../fonts/static/RobotoSlab-SemiBold.ttf); }
+
+@font-face {
+  font-family: 'Bungee';
+  src: url(../fonts/Bungee/Bungee-Regular.ttf); }
+
+/*index*/
+.intro h1 {
+  display: inline; }
+
+header.intro {
+  height: 100vh;
+  background-color: #00003d; }
+  header.intro video {
+    height: 100%;
+    margin: auto; }
+
+.index-h1 {
+  font-size: 10vw;
+  font-family: "Bungee", curvasive;
+  color: #fff;
+  text-transform: uppercase; }
+
+h2, h1, .small-description {
+  font-family: "Bungee", curvasive; }
+
+#index-h3 {
+  font-size: 5em;
+  font-family: "Bungee", curvasive;
+  color: #00003d;
+  height: 100px;
+  width: 300px;
+  z-index: 2; }
+
+#index-h3:hover, #index-h3:active {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffc107, 0 0 40px #ffc107, 0 0 80px #ffc107; }
+
+/*Home*/
+.not-index {
+  padding: 90px 0 0 0; }
+
+nav {
+  font-family: "Bungee", curvasive;
+  background-color: #1A233C; }
+  nav .navbar-brand, nav .navbar-brand:hover, nav .nav-link, nav .navbar-brand:visited, nav .navbar-brand:focus, nav .nav-link:visited, nav .nav-link:focus {
+    text-decoration: none;
+    color: #ffc107;
+    -webkit-text-stroke: 1px #ffc107;
+    transition: 0.5s; }
+  nav .nav-link:before {
+    content: attr(data-text);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-shadow: none;
+    color: transparent;
+    opacity: 0;
+    z-index: 101; }
+  nav .nav-link:hover {
+    color: #cc9f16;
+    transition: 0.5s; }
+  nav .active {
+    color: #ffcc00 !important;
+    text-shadow: 0 0 10px #ffcc00, 0 0 40px #ffcc00, 0 0 80px #ffcc00; }
+
+.overlay-menu {
+  background-color: #1A233C;
+  z-index: -1;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  opacity: 0; }
+
+.short-description {
+  margin-top: 0%; }
+
+p {
+  font-family: "Roboto Slab", serif;
+  text-align: justify;
+  word-spacing: normal; }
+
+.side-pic {
+  object-fit: cover; }
+  .side-pic img {
+    width: 100%;
+    height: 800px; }
+
+.title {
+  font-family: "Bungee", curvasive; }
+
+.general {
+  margin-top: 5%;
+  border: 3px solid #1A233C; }
+  .general img {
+    height: 30px; }
+
+.social-icon {
+  margin-right: 4%;
+  font-size: 1.4em; }
+  .social-icon a {
+    text-decoration: none;
+    color: white; }
+
+.social-link a:hover {
+  color: #00008c; }
+
+.carousel-row {
+  margin-top: 100px; }
+
+.main-carousel {
+  border: 5px solid #1A233C;
+  padding: 0 !important; }
+
+.intro-carousel {
+  font-size: 12vw;
+  text-align: center;
+  font-family: "Bungee", curvasive;
+  background: #fff;
+  line-height: 100%;
+  mix-blend-mode: screen; }
+
+.carousel-cell {
+  width: 100%;
+  /* full width */
+  height: 500px;
+  margin-right: 2vw; }
+  .carousel-cell video {
+    object-fit: cover; }
+  .carousel-cell img {
+    height: 100%; }
+  .carousel-cell .carousel-description {
+    font-size: 1.4em; }
+  .carousel-cell .content-carousel img {
+    height: 190px; }
+
+@media screen and (max-width: 993px) {
+  .carousel-cell {
+    height: 300px; }
+  .content-carousel {
+    overflow: scroll; } }
+
+@media screen and (max-width: 993px) {
+  .carousel-cell {
+    height: 200px; } }
+
+.progress {
+  height: 50px !important;
+  margin: 0 10%; }
+
+.progress-bar {
+  transition: 5s; }
+
+#cpp, #python, #javascript, #htmlcss {
+  width: 0; }
+
+#cpp {
+  background-color: navy; }
+
+#python {
+  background-color: #3776ab;
+  color: #ffdd6f; }
+
+#javascript {
+  background-color: yellow;
+  color: black; }
+
+#htmlcss {
+  background-image: linear-gradient(43deg, #4158D0, #C850C0, #FFCC70); }
+
+.flickity-page-dots .dot {
+  width: 12px !important;
+  height: 12px !important; }
+
+.flickity-page-dots .dot.is-selected {
+  background: #1A233C; }
+
+.flickity-enabled:focus .flickity-viewport {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color; }
+
+footer {
+  background: #1A233C;
+  color: #ffc107;
+  -webkit-text-stroke: 1px #ffc107; }
+
+/*Blog*/
+.blog-only .date {
+  border-bottom: 2px solid #1A233C; }
+
+.blog-only .index {
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6em; }
+
+.blog-only h1.main-title {
+  border-bottom: 1.4px solid #1A233C;
+  font-size: 9vw !important; }
+
+.blog-only h1.main-title#ma3 {
+  color: #4B0082; }
+
+.blog-only h1.main-title#ma2 {
+  color: #fcb033; }
+
+.blog-only h1.main-title#ma1 {
+  color: black; }
+
+.blog-only h4.small-title {
+  font-size: 2em;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600; }
+
+.blog-only img {
+  width: 80%; }
+
+.blog-only p {
+  font-size: larger;
+  font-weight: 200; }
+
+.blog-only .post {
+  margin-bottom: 2vh; }
+
+.blog-only .article::first-letter {
+  font-size: 5em;
+  float: left;
+  margin: 0.1em 0.1em 0.1em 0;
+  line-height: 0.65em; }
+
+@media screen and (max-width: 794px) {
+  .blog-only h1 {
+    font-size: 1.3em; }
+  .date {
+    font-size: 1.8vh; } }
+
+@media screen and (max-width: 500px) {
+  .blog-only h1.main-title {
+    font-size: 3.4em; } }
+
+/*hobbie*/
+.hobbies .x {
+  margin-bottom: 5vh; }
+
+.hobbies .hobby-title {
+  font-size: 5vw;
+  color: #1A233C;
+  background: -webkit-linear-gradient(#203A43, #0F2027, #2C5364);
+  background: -webkit-linear-gradient(#c31432, #240b36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+@media screen and (max-width: 600px) {
+  .hobbies .hobby-title {
+    font-size: 10vw; } }
+
+.hobbies #hobby-list {
+  font-family: "Roboto Slab", serif; }
+  .hobbies #hobby-list .list-group-item {
+    font-size: 1.2em;
+    font-weight: 800; }
+  .hobbies #hobby-list .active {
+    background: #1A233C;
+    color: #ffc107; }
+
+.hobbies video {
+  width: 100%; }
